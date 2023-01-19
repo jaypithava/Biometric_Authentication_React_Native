@@ -36,7 +36,7 @@ export default function App() {
   };
 
   const TwoButtonAlert = () => {
-    Alert.alert("Welcome To App", "Okk", [
+    Alert.alert("Welcome To Biometric", "Jay", [
       {
         text: "Back",
         onPress: () => console.log("Cancel Pressed"),
@@ -100,7 +100,7 @@ export default function App() {
             ? "Your Device Compatible with Biometric Authentication"
             : "Face or Fingerprint Available on this device"}
         </Text>
-        <TouchableHighlight style={{ height: 60, marginTop: 200 }}>
+        <TouchableHighlight>
           <Button
             title='Login With Biometrics'
             color='black'
@@ -115,7 +115,8 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    paddingTop : StatusBar.currentStatusBar
+    height: '100%',
+    justifyContent:'center',
+    alignContent: 'center',
   },
 });
